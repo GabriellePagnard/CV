@@ -36,6 +36,12 @@ Ce projet a été créé dans le cadre d'une révision approfondie des fondament
 
 Pierrot Corned’Argent est un personnage fictif et haut en couleurs, dont le CV mêle fantaisie, références geek et poésie magique.
 
+## 🌐 Lien direct
+
+Pour voir le CV de Pierrot : [CV](https://gabriellepagnard.github.io/CV/)   
+
+
+
 ## 📸 Aperçu visuel
 
 ![CV de Pierrot](images/cv_pierrot.png)
