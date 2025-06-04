@@ -59,7 +59,7 @@ a:hover {
 
 /* ----------- HEADER ----------- */
 header {
-    background : #87CEFA;
+    background: #87CEFA;
     color: #333333;
     padding: 1rem;
     text-align: center;
@@ -112,12 +112,36 @@ main {
 
 section {
     margin-bottom: 2rem;
+
 }
 
 section ul {
     list-style: disc;
     margin-left: 1.5rem;
 }
+
+.grid-container-profil {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#profil,
+#presentation {
+    flex: 1;
+}
+
+.grid-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#experience,
+#formation {
+    flex: 1;
+}
+
 
 /* ----------- FOOTER ----------- */
 footer {
@@ -130,6 +154,11 @@ footer {
 
 /* ----------- RESPONSIVE ----------- */
 @media (max-width: 600px) {
+    header img {
+        max-width: 100%;
+        height: auto;
+    }
+
     header h1 {
         font-size: 2rem;
     }
@@ -137,9 +166,55 @@ footer {
     nav ul {
         flex-direction: column;
         align-items: center;
+        width: 100%;
+        gap: 0.5rem;
+    }
+
+    section {
+        padding: 1rem;
     }
 
     section ul {
         margin-left: 1rem;
+    }
+
+    p {
+        line-height: 1.6;
+    }
+
+    .container {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .grid-container-profil,
+    .grid-container {
+        flex-direction: column !important;
+    }
+}
+
+/* Écrans ≥ 768px : 2 colonnes */
+
+@media (min-width: 768px) {
+    .grid-container-profil {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    #profil,
+    #presentation {
+        flex: 1 1 0;
+    }
+
+    .grid-container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    #experience,
+    #formation {
+        flex: 1 1 0;
     }
 }
